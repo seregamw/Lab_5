@@ -1,0 +1,111 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Accounts Manager'
+  ClientHeight = 134
+  ClientWidth = 331
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 22
+    Height = 13
+    Caption = 'User'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 35
+    Width = 22
+    Height = 13
+    Caption = 'Pass'
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 111
+    Width = 56
+    Height = 13
+    Caption = 'User count:'
+  end
+  object Label4: TLabel
+    Left = 8
+    Top = 92
+    Width = 55
+    Height = 13
+    Caption = 'Protect DB:'
+  end
+  object Edit1: TEdit
+    Left = 36
+    Top = 5
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 36
+    Top = 32
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 59
+    Width = 68
+    Height = 25
+    Caption = 'Add User'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 89
+    Top = 59
+    Width = 68
+    Height = 25
+    Caption = 'Del User'
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object DBGrid1: TDBGrid
+    Left = 163
+    Top = 5
+    Width = 158
+    Height = 120
+    DataSource = Data.DataSource1
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+  end
+  object Button3: TButton
+    Left = 69
+    Top = 90
+    Width = 25
+    Height = 20
+    Caption = 'ON'
+    TabOrder = 5
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 100
+    Top = 90
+    Width = 29
+    Height = 20
+    Caption = 'OFF'
+    TabOrder = 6
+    OnClick = Button4Click
+  end
+end
